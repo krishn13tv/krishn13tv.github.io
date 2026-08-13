@@ -288,10 +288,24 @@ section.block{
 .section-head p{ color: var(--ink-soft); font-size:0.92rem; max-width:34ch; margin:0.4rem 0 0; }
 
 /* ---------- GALLERY ---------- */
+/*
+  Orientation classes — add ONE of these to each <figure>, matching the
+  actual shape of that photo:
+
+    class="vertical"    → tall portrait tile (fits 3:4 / 2:3 photos — most photos)
+    class="horizontal"  → wide landscape tile (fits 4:3 / 3:2 / 16:9 photos)
+    class="square"      → even tile (fits 1:1 photos)
+    class="feature"     → large highlight tile, works for either orientation,
+                           use sparingly (1–2 per gallery) to vary rhythm
+
+  grid-auto-flow: dense lets tiles pack in tightly regardless of the order
+  vertical/horizontal photos appear in the markup.
+*/
 .gallery{
   display:grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-auto-rows: 140px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 130px;
+  grid-auto-flow: dense;
   gap: 0.9rem;
 }
 .gallery figure{
@@ -323,19 +337,20 @@ section.block{
 .gallery figure:hover figcaption{ opacity:1; transform:translateY(0); }
 .gallery figcaption .eyebrow{ color: var(--sun); }
 
-.g1{ grid-column: span 3; grid-row: span 2; }
-.g2{ grid-column: span 3; grid-row: span 1; }
-.g3{ grid-column: span 3; grid-row: span 1; }
-.g4{ grid-column: span 2; grid-row: span 1; }
-.g5{ grid-column: span 2; grid-row: span 1; }
-.g6{ grid-column: span 2; grid-row: span 1; }
-.g7{ grid-column: span 4; grid-row: span 1; }
-.g8{ grid-column: span 2; grid-row: span 1; }
+.gallery figure.vertical{ grid-column: span 1; grid-row: span 2; }
+.gallery figure.horizontal{ grid-column: span 2; grid-row: span 1; }
+.gallery figure.square{ grid-column: span 1; grid-row: span 1; }
+.gallery figure.feature{ grid-column: span 2; grid-row: span 2; }
 
 @media (max-width: 860px){
-  .gallery{ grid-template-columns: repeat(2, 1fr); grid-auto-rows:150px; }
-  .g1,.g2,.g3,.g4,.g5,.g6,.g7,.g8{ grid-column: span 1; grid-row: span 1; }
-  .g1{ grid-column: span 2; grid-row: span 2; }
+  .gallery{ grid-template-columns: repeat(2, 1fr); grid-auto-rows:140px; }
+  .gallery figure.horizontal{ grid-column: span 2; grid-row: span 1; }
+  .gallery figure.feature{ grid-column: span 2; grid-row: span 2; }
+  .gallery figure.vertical, .gallery figure.square{ grid-column: span 1; grid-row: span 2; }
+}
+
+@media (max-width: 480px){
+  .gallery{ grid-template-columns: repeat(2, 1fr); }
 }
 
 /* ---------- FUN PROJECTS (Triops etc.) ---------- */

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recipes — Krish Ethan Nair</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header>
+  <a href="../" class="logo">Krish Ethan <span>Nair</span></a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span>
+  </button>
+  <nav>
+    <ul id="navList">
+      <li><a href="../">Home</a></li>
+      <li><a href="../photography/">Photography</a></li>
+      <li><a href="../projects/">Projects</a></li>
+      <li><a href="../recipes/" aria-current="page">Recipes</a></li>
+      <li><a href="../connect/">Connect</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="block">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">In the kitchen</p>
+      <h2>Recipes</h2>
+      <p>Things I've cooked and want to remember how to make again.</p>
+    </div>
+  </div>
+
+  <!--
+    TO ADD A NEW RECIPE:
+    1. Duplicate one of the recipe subfolders (e.g. /recipes/lemon-butter-pasta),
+       rename the folder to your new recipe's name (lowercase, hyphens instead
+       of spaces works best, e.g. /recipes/garlic-fried-rice).
+    2. Edit that folder's index.html: swap the photo, title, cook time, and
+       ingredients/steps.
+    3. Copy one .recipe-card block below, update the photo/title/time, and
+       point href at your new folder.
+  -->
+  <div class="recipe-grid">
+    <a class="recipe-card" href="lemon-butter-pasta/">
+      <div class="recipe-photo"><img src="../images/lemon-pasta.jpg" alt="Lemon butter pasta"></div>
+      <div class="recipe-info">
+        <h3>Lemon Butter Pasta</h3>
+        <span class="recipe-time">⏱ 25 min</span>
+      </div>
+    </a>
+
+    <a class="recipe-card" href="sheet-pan-veggies/">
+      <div class="recipe-photo"><img src="../images/sheet-pan.jpg" alt="Sheet pan veggies"></div>
+      <div class="recipe-info">
+        <h3>Sheet Pan Veggies</h3>
+        <span class="recipe-time">⏱ 35 min</span>
+      </div>
+    </a>
+
+    <a class="recipe-card" href="#">
+      <div class="recipe-photo"><img src="../images/recipe-placeholder.jpg" alt="Next recipe"></div>
+      <div class="recipe-info">
+        <h3>Your Next Recipe</h3>
+        <span class="recipe-time">⏱ -- min</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Krish Ethan Nair. Built with clear skies in mind.</span>
+  <span><a href="../" style="color:var(--sky-deep); font-weight:600;">Home</a></span>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const navList = document.getElementById('navList');
+  toggle.addEventListener('click', () => {
+    const open = navList.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>

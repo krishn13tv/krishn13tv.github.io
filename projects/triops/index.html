@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Breeding Triops — Krish Ethan Nair</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+
+<header>
+  <a href="../../" class="logo">Krish Ethan <span>Nair</span></a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span>
+  </button>
+  <nav>
+    <ul id="navList">
+      <li><a href="../../">Home</a></li>
+      <li><a href="../../photography/">Photography</a></li>
+      <li><a href="../../projects/" aria-current="page">Projects</a></li>
+      <li><a href="../../recipes/">Recipes</a></li>
+      <li><a href="../../connect/">Connect</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="detail-hero">
+  <a href="../" class="back-link">← Back to Projects</a>
+  <p class="eyebrow">Aquaculture · Ongoing</p>
+  <h1 style="font-size:clamp(2rem,5vw,2.8rem); font-weight:500;">Breeding Triops</h1>
+  <div class="detail-photo"><img src="../../images/triops-full.jpg" alt="Triops in their tank"></div>
+</div>
+
+<div class="detail-body">
+  <p>Triops are small freshwater crustaceans whose eggs can lie dormant for years and hatch within a day or two of hitting water — which makes them a surprisingly approachable place to start if you're curious about raising something from scratch. This page is a placeholder for that story.</p>
+
+  <h2>What this project involved</h2>
+  <ul>
+    <li>Replace this with how you hatched your first batch — tank setup, water conditions, timeline.</li>
+    <li>Add notes on feeding, growth stages, and anything that surprised you.</li>
+    <li>Mention any setbacks (die-offs, water quality issues) and what you'd do differently.</li>
+  </ul>
+
+  <h2>Notes / what's next</h2>
+  <p>Use this space for ongoing updates, or swap it out entirely with your own write-up. The photo above and the meta details are placeholders — replace <code>../../images/triops-full.jpg</code> with your own image once you have one uploaded to the images folder.</p>
+</div>
+
+<footer>
+  <span>© 2026 Krish Ethan Nair. Built with clear skies in mind.</span>
+  <span><a href="../../" style="color:var(--sky-deep); font-weight:600;">Home</a></span>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const navList = document.getElementById('navList');
+  toggle.addEventListener('click', () => {
+    const open = navList.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>

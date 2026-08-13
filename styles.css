@@ -323,6 +323,7 @@ section.block{
 .gallery figure:hover img{ transform: scale(1.05); }
 
 .gallery figure.feature{
+  display:block;
   column-span: all;
 }
 .gallery figure.feature img{

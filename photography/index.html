@@ -7,12 +7,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 
 <header>
-  <a href="index.html" class="logo">Krish Ethan <span>Nair</span></a>
+  <a href="../" class="logo">Krish Ethan <span>Nair</span></a>
   <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
     <span></span>
   </button>
@@ -21,22 +21,47 @@
       <li><a href="../">Home</a></li>
       <li><a href="../photography/" aria-current="page">Photography</a></li>
       <li><a href="../projects/">Projects</a></li>
-      <li><a href="../socials/">Socials</a></li>
-      <li><a href="../contact/">Contact</a></li>
+      <li><a href="../recipes/">Recipes</a></li>
+      <li><a href="../connect/">Connect</a></li>
     </ul>
   </nav>
 </header>
 
-<section class="placeholder">
-  <span class="eyebrow">Photography</span>
-  <h1>The gallery is still being framed.</h1>
-  <p>This page is reserved for the photo gallery — it hasn't been built out yet. Check back soon.</p>
-  <div class="placeholder-frame">GALLERY — COMING SOON</div>
+<section class="block">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">Selected frames</p>
+      <h2>Photography</h2>
+      <p>A running collection of skies, streets, and everything in between.</p>
+    </div>
+  </div>
+
+  <!--
+    HOW TO ADD YOUR OWN PHOTOS:
+    1. Upload image files into the /images folder at the root of the repo.
+    2. Replace the src="../images/photoX.jpg" paths below with your actual filenames.
+    3. Update the alt text (for accessibility) and the caption text.
+    4. To add more photos, copy a whole <figure>...</figure> block and paste it
+       before the closing </div> of .gallery, then edit it.
+    5. The g1–g8 classes control tile size/shape in the mosaic layout (g1 is the
+       big tile, g4–g6 are small squares) — any class works with any photo,
+       they just control layout, not content.
+  -->
+  <div class="gallery">
+    <figure class="g1"><img src="../images/photo1.jpg" alt="Describe this photo"><figcaption><span class="eyebrow">01</span><br>Title Here</figcaption></figure>
+    <figure class="g2"><img src="../images/photo2.jpg" alt="Describe this photo"><figcaption><span class="eyebrow">02</span><br>Title Here</figcaption></figure>
+    <figure class="g3"><img src="../images/photo3.jpg" alt="Describe this photo"><figcaption><span class="eyebrow">03</span><br>Title Here</figcaption></figure>
+    <figure class="g4"><img src="../images/photo4.jpg" alt="Describe this photo"><figcaption><span class="eyebrow">04</span><br>Title Here</figcaption></figure>
+    <figure class="g5"><img src="../images/photo5.jpg" alt="Describe this photo"><figcaption><span class="eyebrow">05</span><br>Title Here</figcaption></figure>
+    <figure class="g6"><img src="../images/photo6.jpg" alt="Describe this photo"><figcaption><span class="eyebrow">06</span><br>Title Here</figcaption></figure>
+    <figure class="g7"><img src="../images/photo7.jpg" alt="Describe this photo"><figcaption><span class="eyebrow">07</span><br>Title Here</figcaption></figure>
+    <figure class="g8"><img src="../images/photo8.jpg" alt="Describe this photo"><figcaption><span class="eyebrow">08</span><br>Title Here</figcaption></figure>
+  </div>
 </section>
 
 <footer>
   <span>© 2026 Krish Ethan Nair. Built with clear skies in mind.</span>
-  <span><a href="index.html" style="color:var(--sky-deep); font-weight:600;">Home</a></span>
+  <span><a href="../" style="color:var(--sky-deep); font-weight:600;">Home</a></span>
 </footer>
 
 <script>

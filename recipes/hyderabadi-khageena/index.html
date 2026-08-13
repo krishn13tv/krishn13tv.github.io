@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lemon Butter Pasta — Krish Ethan Nair</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+
+<header>
+  <a href="../../" class="logo">Krish Ethan <span>Nair</span></a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span>
+  </button>
+  <nav>
+    <ul id="navList">
+      <li><a href="../../">Home</a></li>
+      <li><a href="../../photography/">Photography</a></li>
+      <li><a href="../../projects/">Projects</a></li>
+      <li><a href="../../recipes/" aria-current="page">Recipes</a></li>
+      <li><a href="../../connect/">Connect</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="detail-hero">
+  <a href="../" class="back-link">← Back to Recipes</a>
+  <p class="eyebrow">Breakfast</p>
+  <h1 style="font-size:clamp(2rem,5vw,2.8rem); font-weight:500;">Hyderabadi Khageena</h1>
+  <div class="detail-photo"><img src="../../images/recipes/khageena.jpg" alt="Hyderabadi Khageena"></div>
+  <div class="detail-meta">
+    <span>⏱ <strong>25 min</strong> total</span>
+    <span>🍽 <strong>4</strong> servings</span>
+    <span>📊 <strong>Easy</strong></span>
+  </div>
+</div>
+
+<div class="detail-body">
+  <h2>Ingredients</h2>
+  <ul>
+    <li>Placeholder — 8 oz spaghetti or linguine</li>
+    <li>Placeholder — 4 tbsp butter</li>
+    <li>Placeholder — 1 lemon, zested and juiced</li>
+    <li>Placeholder — 2 cloves garlic, minced</li>
+    <li>Placeholder — parmesan, salt, pepper, red pepper flakes</li>
+  </ul>
+
+  <h2>Steps</h2>
+  <ol>
+    <li>Replace with your actual steps — boil pasta, reserving a cup of pasta water.</li>
+    <li>Melt butter, sauté garlic, add lemon juice and zest.</li>
+    <li>Toss pasta in the sauce, loosen with reserved pasta water as needed.</li>
+    <li>Finish with parmesan and pepper flakes.</li>
+  </ol>
+
+  <h2>Notes</h2>
+  <p>This is placeholder text — swap in your own tips, substitutions, or serving suggestions here.</p>
+</div>
+
+<footer>
+  <span>© 2026 Krish Ethan Nair. Built with clear skies in mind.</span>
+  <span><a href="../../" style="color:var(--sky-deep); font-weight:600;">Home</a></span>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const navList = document.getElementById('navList');
+  toggle.addEventListener('click', () => {
+    const open = navList.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>

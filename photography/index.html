@@ -43,19 +43,24 @@
     3. Update the alt text (for accessibility) and the caption text.
     4. To add more photos, copy a whole <figure>...</figure> block and paste it
        before the closing </div> of .gallery, then edit it.
-    5. The g1–g8 classes control tile size/shape in the mosaic layout (g1 is the
-       big tile, g4–g6 are small squares) — any class works with any photo,
-       they just control layout, not content.
+    5. Give each <figure> ONE orientation class matching that photo's actual shape:
+         "vertical"    → tall tile, for 3:4 / 2:3 portrait photos (most of yours)
+         "horizontal"  → wide tile, for 4:3 / 3:2 / 16:9 landscape photos
+         "square"      → even tile, for 1:1 photos
+         "feature"     → large highlight tile (use for 1–2 standout shots only)
+       Order in the markup doesn't matter — the grid packs tiles in tightly
+       regardless of orientation mix.
   -->
   <div class="gallery">
-    <figure class="g1"><img src="../images/photography/photo1.jpg"><figcaption><span class="eyebrow">01</span><br>Title Here</figcaption></figure>
-    <figure class="g2"><img src="../images/photography/photo2.jpg"><figcaption><span class="eyebrow">02</span><br>Title Here</figcaption></figure>
-    <figure class="g3"><img src="../images/photography/photo3.jpg"><figcaption><span class="eyebrow">03</span><br>Title Here</figcaption></figure>
-    <figure class="g4"><img src="../images/photography/photo4.jpg"><figcaption><span class="eyebrow">04</span><br>Title Here</figcaption></figure>
-    <figure class="g5"><img src="../images/photography/photo5.jpg"><figcaption><span class="eyebrow">05</span><br>Title Here</figcaption></figure>
-    <figure class="g6"><img src="../images/photography/photo6.jpg"><figcaption><span class="eyebrow">06</span><br>Title Here</figcaption></figure>
-    <figure class="g7"><img src="../images/photography/photo7.jpg"><figcaption><span class="eyebrow">07</span><br>Title Here</figcaption></figure>
-    <figure class="g8"><img src="../images/photography/photo8.jpg" alt=""><figcaption><span class="eyebrow">08</span><br>Title Here</figcaption></figure>
+    <figure class="feature"><img src="../images/photography/photo1.jpg" alt=""><figcaption><span class="eyebrow">01</span><br>Title Here</figcaption></figure>
+    <figure class="vertical"><img src="../images/photography/photo2.jpg" alt=""><figcaption><span class="eyebrow">02</span><br>Title Here</figcaption></figure>
+    <figure class="horizontal"><img src="../images/photography/photo3.jpg" alt=""><figcaption><span class="eyebrow">03</span><br>Title Here</figcaption></figure>
+    <figure class="horizontal"><img src="../images/photography/photo4.jpg" alt=""><figcaption><span class="eyebrow">04</span><br>Title Here</figcaption></figure>
+    <figure class="horizontal"><img src="../images/photography/photo5.jpg" alt=""><figcaption><span class="eyebrow">05</span><br>Title Here</figcaption></figure>
+    <figure class="horizontal"><img src="../images/photography/photo6.jpg" alt=""><figcaption><span class="eyebrow">06</span><br>Title Here</figcaption></figure>
+    <figure class="horizontal"><img src="../images/photography/photo7.jpg" alt=""><figcaption><span class="eyebrow">07</span><br>Title Here</figcaption></figure>
+    <figure class="horizontal"><img src="../images/photography/photo8.jpg" alt=""><figcaption><span class="eyebrow">08</span><br>Title Here</figcaption></figure>
+    <figure class="horizontal"><img src="../images/photography/photo9.jpg" alt=""><figcaption><span class="eyebrow">09</span><br>Title Here</figcaption></figure>
   </div>
 </section>
 

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Krish Ethan Nair</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header>
+  <a href="../" class="logo">Krish Ethan <span>Nair</span></a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span>
+  </button>
+  <nav>
+    <ul id="navList">
+      <li><a href="../">Home</a></li>
+      <li><a href="../photography/">Photography</a></li>
+      <li><a href="../projects/" aria-current="page">Projects</a></li>
+      <li><a href="../social/">Social</a></li>
+      <li><a href="../contact/">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="block">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">What I've been building</p>
+      <h2>Projects</h2>
+      <p>A few things I've designed, coded, or shipped recently.</p>
+    </div>
+  </div>
+
+  <div class="projects">
+    <div class="project-card">
+      <h3>Project One</h3>
+      <p>A short description of this project goes here — what it does, why you built it, and what makes it interesting.</p>
+      <div class="tag-row"><span class="tag">Web</span><span class="tag">Design</span></div>
+      <a href="#" class="project-link">View project
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+      </a>
+    </div>
+    <div class="project-card">
+      <h3>Project Two</h3>
+      <p>Swap this in with your own project summary — tools used, the problem it solves, and a link to see it live.</p>
+      <div class="tag-row"><span class="tag">App</span><span class="tag">iOS</span></div>
+      <a href="#" class="project-link">View project
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+      </a>
+    </div>
+    <div class="project-card">
+      <h3>Project Three</h3>
+      <p>Another spot to highlight something you've made — a hackathon build, a side project, or client work.</p>
+      <div class="tag-row"><span class="tag">Data</span><span class="tag">Python</span></div>
+      <a href="#" class="project-link">View project
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Krish Ethan Nair. Built with clear skies in mind.</span>
+  <span><a href="../" style="color:var(--sky-deep); font-weight:600;">Home</a></span>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const navList = document.getElementById('navList');
+  toggle.addEventListener('click', () => {
+    const open = navList.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>

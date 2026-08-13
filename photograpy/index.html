@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photography — Krish Ethan Nair</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
+<header>
+  <a href="index.html" class="logo">Krish Ethan <span>Nair</span></a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span>
+  </button>
+  <nav>
+    <ul id="navList">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="photography.html" aria-current="page">Photography</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="social.html">Social</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="placeholder">
+  <span class="eyebrow">Photography</span>
+  <h1>The gallery is still being framed.</h1>
+  <p>This page is reserved for the photo gallery — it hasn't been built out yet. Check back soon.</p>
+  <div class="placeholder-frame">GALLERY — COMING SOON</div>
+</section>
+
+<footer>
+  <span>© 2026 Krish Ethan Nair. Built with clear skies in mind.</span>
+  <span><a href="index.html" style="color:var(--sky-deep); font-weight:600;">Home</a></span>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const navList = document.getElementById('navList');
+  toggle.addEventListener('click', () => {
+    const open = navList.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>

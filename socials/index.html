@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Socials — Krish Ethan Nair</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header>
+  <a href="../" class="logo">Krish Ethan <span>Nair</span></a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span>
+  </button>
+  <nav>
+    <ul id="navList">
+      <li><a href="../">Home</a></li>
+      <li><a href="../photography/">Photography</a></li>
+      <li><a href="../projects/">Projects</a></li>
+      <li><a href="../socials/" aria-current="page">Social</a></li>
+      <li><a href="../contact/">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="social-wrap">
+  <section class="block">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Find me elsewhere</p>
+        <h2>Social</h2>
+        <p>Follow along for more frequent posts and behind-the-scenes.</p>
+      </div>
+    </div>
+
+    <div class="social-grid">
+      <a class="social-card" href="#">
+        <span class="social-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></span>
+        <span><span class="handle">@krishn13tv</span><br><span class="platform">Instagram</span></span>
+      </a>
+      <a class="social-card" href="#">
+        <span class="social-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><path d="M20 4l-8.5 9.5L4 4M20 20l-7-7.8"/></svg></span>
+        <span><span class="handle">@krishn13tv</span><br><span class="platform">X / Twitter</span></span>
+      </a>
+      <a class="social-card" href="#">
+        <span class="social-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="8" y1="11" x2="8" y2="16"/><circle cx="8" cy="8" r="0.5" fill="white"/><path d="M12 16v-3a2 2 0 0 1 4 0v3"/></svg></span>
+        <span><span class="handle">Krish Nair</span><br><span class="platform">LinkedIn</span></span>
+      </a>
+      <a class="social-card" href="#">
+        <span class="social-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.93 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.4 9.4 0 0 1 5 0c1.9-1.3 2.74-1.02 2.74-1.02.56 1.38.2 2.4.1 2.65.65.7 1.03 1.59 1.03 2.68 0 3.83-2.34 4.68-4.57 4.92.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg></span>
+        <span><span class="handle">krishn13tv</span><br><span class="platform">GitHub</span></span>
+      </a>
+    </div>
+  </section>
+</section>
+
+<footer>
+  <span>© 2026 Krish Ethan Nair. Built with clear skies in mind.</span>
+  <span><a href="../" style="color:var(--sky-deep); font-weight:600;">Home</a></span>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const navList = document.getElementById('navList');
+  toggle.addEventListener('click', () => {
+    const open = navList.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>

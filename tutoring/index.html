@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tutoring Services — Krish Ethan Nair</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header>
+  <a href="../" class="logo">Krish Ethan <span>Nair</span></a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span>
+  </button>
+  <nav>
+    <ul id="navList">
+      <li><a href="../">Home</a></li>
+      <li><a href="../tutoring/" aria-current="page">Tutoring Services</a></li>
+      <li><a href="../photography/">Photography</a></li>
+      <li><a href="../projects/">Projects</a></li>
+      <li><a href="../recipes/">Recipes</a></li>
+      <li><a href="../resume/">Résumé</a></li>
+      <li><a href="../connect/">Connect</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="block">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">Tutoring</p>
+      <h2>Tutoring Services</h2>
+      <p>Math and science tutoring, one-on-one, tailored to where you're at.</p>
+    </div>
+  </div>
+
+  <p style="color:var(--ink-soft); font-size:1rem; line-height:1.7; max-width:60ch; margin-bottom:2rem;">
+    I'm a graduate of Thomas Jefferson High School for Science and Technology (TJHSST) and currently a sophomore Biomedical Engineering student at Virginia Tech. I tutor math and science at the middle and high school level, with a focus on building real understanding rather than just getting through homework.
+  </p>
+
+  <h3 style="font-size:1.1rem; font-weight:600; margin-bottom:1rem;">Subjects I teach</h3>
+  <div class="tag-row" style="margin-bottom:2.5rem;">
+    <span class="tag">Math through AP Calculus AB</span>
+    <span class="tag">Calculus 1</span>
+    <span class="tag">Biology</span>
+    <span class="tag">AP Biology</span>
+    <span class="tag">Chemistry</span>
+  </div>
+
+  <div class="project-card" style="max-width:520px;">
+    <h3>Interested? Let's talk pricing.</h3>
+    <p>Rates depend on subject, grade level, and session frequency — email me and I'll get back to you with details.</p>
+    <a href="mailto:knair.tutor@gmail.com" class="btn btn-primary-light" style="align-self:flex-start;">Email knair.tutor@gmail.com</a>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Krish Ethan Nair. Built with clear skies in mind.</span>
+  <span><a href="../" style="color:var(--sky-deep); font-weight:600;">Home</a></span>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const navList = document.getElementById('navList');
+  toggle.addEventListener('click', () => {
+    const open = navList.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>
